@@ -23,6 +23,10 @@ body {
   background-color: #f0f4e5;
 }
 
+a {
+  color: black;
+}
+
 /* Header */
 
 header {
@@ -39,7 +43,6 @@ nav {
 ul {
   height: 100%;
   margin: 0 auto;
-  flex-shrink: 0;
   flex-basis: 350px;
   display: flex;
   justify-content: space-between;
@@ -67,7 +70,7 @@ li {
   height: 7vh;
 }
 
-#sign-up {
+.sign-up {
   height: 7vh;
   width: calc(7vh / 130 * 450);
   background-color: black;
@@ -79,25 +82,89 @@ li {
 
 /* Section 1 */
 
-#official {
+#title-container {
   height: 30vh;
   width: 100%;
-  font-size: 70px;
-  font-family: 'Tinos', serif;
-  font-weight: 700;
-  text-align: center;
+  margin-bottom: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#title {
+  font-size: 70px;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  text-align: center;
+}
 
 
+/* Section 2 */
 
+#about-us {
+  display: flex;
+  margin-bottom: 30vh;
+  align-items: center;
+}
 
+.left-elements {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: calc(100vh - 50vh / 5 * 7)
+}
 
+.subtitle {
+  font-size: 36px;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+}
 
-/*Section 1*/
+.parag {
+  font-size: 20px;
+  font-family: 'Tinos', serif;
+  text-align: center;
+  margin: 0 4vw;
+  margin-bottom: 5vh;
+}
+
+#about-image {
+  flex-shrink: 1;
+  flex-basis: 35vw;
+  width: 30vw;
+  margin: 0 4vw;
+  height: calc(35vw / 7 * 5);
+}
+
+/*Section 3*/
+
+#why-linguistics {
+  display: flex;
+  margin-bottom: 60vh;
+  align-items: center;
+}
+
+#why-image {
+  flex-shrink: 1;
+  flex-basis: 35vw;
+  width: 30vw;
+  margin: 0 4vw;
+  height: calc(35vw / 7 * 4);
+}
+
+#smaller-sign {
+  height: 2em;
+  width: 6em;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  font-family: 'Tinos', serif;
+  font-size: 16px;
+  border: none;
+}
+
 /* 
 #welcome-section {
   height: 100%;
