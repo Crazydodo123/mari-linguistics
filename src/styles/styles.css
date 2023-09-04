@@ -1,0 +1,172 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "work sans", "sans-serif";
+  overflow-x: hidden;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  width: 85%;
+  margin: auto;
+  background-color: #f0f4e5;
+}
+
+/* Header */
+
+header {
+  height: 9vh;
+  margin: 8vh auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  height: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  flex-basis: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  flex-basis: 100px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navlink {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 2vh 0;
+  width: 80%
+}
+
+#logo {
+  height: 7vh;
+}
+
+#sign-up {
+  height: 7vh;
+  width: calc(7vh / 130 * 450);
+  background-color: black;
+  color: white;
+  font-family: 'Tinos', serif;
+  font-size: 24px;
+  border: none;
+}
+
+/* Section 1 */
+
+#official {
+  height: 30vh;
+  width: 100%;
+  font-size: 70px;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/*Section 1*/
+/* 
+#welcome-section {
+  height: 100%;
+  width: 100%;
+  background-color: #c0d6df;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  padding: 44vh 0
+} */
+
+/*section 2*/
+/* 
+#projects {
+  width: 100%;
+  background-color: #ffbf81;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-family: Arial
+}
+
+#works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin: 50px;
+}
+
+.caption {
+  font-size: 20px;
+  font-family: "work sans";
+  margin: 15px auto;
+  text-align: center;
+} */
+
+/*section 3*/
+/* 
+#about-me {
+  background-color: #A5FFC3;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#sl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  flex-grow: 1;
+  gap: 40px;
+  margin-bottom: 20vh;
+}
+
+.logo {
+  width: 150px;
+} */
