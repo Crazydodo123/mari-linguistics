@@ -4,6 +4,6 @@ This website uses a React framework with Firebase as its cloud hosting service. 
 
 This website probably contains a lot of security problems. There is only so much you can do in 12 hours with a sleep deprived brain. Please don't perform a SQL injection or anything similar.
 
-I wish you a good Join A Club Day!
+I wish you all a good Join A Club Day!
 
 
