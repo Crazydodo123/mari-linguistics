@@ -34,7 +34,7 @@ const Contest = () => {
   }
   return (
     <div id="contest">
-      <h2 className="subtitle" id="socials-title">Solve This Problem and Have a Chance to Win a 20$ Amazon Gift Card!</h2>
+      <h2 className="subtitle" id="socials-title">Solve This Problem and Have a Chance to Win a 25$ Amazon Gift Card!</h2>
       <img src={braille} id="braille" />
       <p className='parag big'>What is the correct answer for f? (one chance only)</p>
       <form id="contest-form" className='contest' onSubmit={submit}>
