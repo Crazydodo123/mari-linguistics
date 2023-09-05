@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyCa0pczGBURhEt8Fkuf1UMdyG3zHg12wYc",
@@ -12,4 +13,8 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+const firestore = getFirestore(app);
+const collectionRef = collection(firestore, 'club-members')
+
+export { addDoc, collectionRef }

@@ -10,7 +10,7 @@ const Info = () => {
           <h1 id="title">The Official Linguistics Club at Marianopolis</h1>
         </div>
         <div id="about-us">
-          <div class="left-elements">
+          <div className="left-elements">
             <h2 className="subtitle">About Us</h2>
             <p className="parag">
               The Marianopolis Linguistics Club is a vibrant community dedicated to understanding the fundamentals of language itself. Every two weeks during activity period, we explore the fascinating world of linguistics by solving engaging puzzles together, inviting experts in the field, and visiting important cultural locations. This club open to students of all levels, whether they are an amateur linguist or a language aficionado.

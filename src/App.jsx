@@ -8,6 +8,8 @@ import Info from './routes/info'
 import SignUp from './routes/SignUp'
 import Roadmap from './routes/Roadmap'
 
+
+
 function App() {
 
   return (
@@ -15,7 +17,7 @@ function App() {
       <header>
         <nav id="navbar">
           <Link to="/"><img src={logo} id="logo" /></Link>
-          <ul class="links">
+          <ul className="links">
             <Link className="navlink" to="/roadmap">Roadmap</Link>
             <li><a className="navlink" href="#projects">About Me</a></li>
             <li><a className="navlink" href="#about-me">More</a></li>
