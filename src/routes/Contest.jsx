@@ -16,7 +16,7 @@ const Contest = () => {
       'student-id': event.target[1].value,
     }
 
-    if (answer.answer === 'kimono') {
+    if (answer.answer.toLowerCase() === 'kimono') {
       alert('Congratulations, you entered the correct answer! Come back later to our stand to see if you won a prize!')
     } else {
       alert('Sorry, you did not enter the correct answer. Join us next Tuesday during AP to see how this problem is solved.')
