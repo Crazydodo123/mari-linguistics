@@ -15,7 +15,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const firestore = getFirestore(app);
-const collectionRef = collection(firestore, 'club-members')
+const collectionRef = collection(firestore, 'new-club-members')
 
 const contestRef = collection(firestore, 'contest-participants')
 
