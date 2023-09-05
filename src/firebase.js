@@ -17,4 +17,6 @@ const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 const collectionRef = collection(firestore, 'club-members')
 
-export { addDoc, collectionRef }
+const contestRef = collection(firestore, 'contest-participants')
+
+export { addDoc, collectionRef, contestRef }

@@ -32,7 +32,7 @@ const Roadmap = () => {
         </ul>
       </div>
       <div className="week-plan">
-        <h3 className="date">October 31th: Halloween Special</h3>
+        <h3 className="date">October 31st: Halloween Special</h3>
         <ul className="week-description">
           <li className="week-items">Reading famous Halloween stories in unknown languages</li>
           <li className="week-items">Students will attempt to guess the story based on context clues</li>
@@ -40,7 +40,7 @@ const Roadmap = () => {
         </ul>
       </div>
       <div className="week-plan">
-        <h3 className="date">October 31th: NACLO Prepartion</h3>
+        <h3 className="date">November 14th: NACLO Prepartion</h3>
         <ul className="week-description">
           <li className="week-items">Lecture by McGill professor Jessica Coon</li>
           <li className="week-items">She will explain the details of the NACLO contest & how to prepare</li>

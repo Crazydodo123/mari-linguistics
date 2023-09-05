@@ -4,10 +4,17 @@ import thinking from '../assets/thinking.jpg'
 
 
 const Info = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: auto })
+  }
+
   return (
     <main>
         <div id="title-container">
           <h1 id="title">The Official Linguistics Club at Marianopolis</h1>
+          <Link to="/sign-up">
+            <button className="sign-up" id='small-button'>Sign Up!</button>
+          </Link>
         </div>
         <div id="about-us">
           <div className="left-elements">
@@ -23,7 +30,7 @@ const Info = () => {
         </div>
 
         <div id="why-linguistics">
-        <img src={thinking} id="why-image"/>
+          <img src={thinking} id="why-image"/>
           <div className="left-elements">
             <h2 className="subtitle">Why Linguistics?</h2>
             <p className="parag">
@@ -39,6 +46,12 @@ const Info = () => {
               </Link>
             </p>
           </div>
+        </div>
+        <div id="roadmap-link">
+          <h2 className='subtitle'>Checkout our Roadmap!</h2>
+          <Link to='/roadmap' onClick={scrollToTop}>
+            <button className="roadmap">Roadmap</button>
+          </Link>
         </div>
       </main>
   )

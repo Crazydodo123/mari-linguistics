@@ -29,21 +29,24 @@ a {
 
 /* Header */
 
+@media (min-width: 1000px) {
+  .small_logo {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  #small-button {
+    display: none;
+  }
+}
+
 header {
   height: 9vh;
   margin: 8vh auto;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.links {
-  height: 100%;
-  margin: 0 auto;
-  flex-basis: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +59,15 @@ li {
   flex-shrink: 0;
 }
 
+.links {
+  height: 100%;
+  margin: 0 auto;
+  flex-basis: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navlink {
   color: black;
   font-family: 'Lato', sans-serif;
@@ -63,7 +75,6 @@ li {
   text-align: center;
   font-size: 18px;
   padding: 2vh 0;
-  width: 80%
 }
 
 #logo {
@@ -85,10 +96,51 @@ li {
   cursor: pointer;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+
+@media (max-width: 1000px) {
+  .big_logo {
+    display: none
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 95%;
+  }
+
+  .links {
+    flex-basis: 280px;
+  }
+
+  #title-container {
+    display: flex;
+    margin-bottom: 20vh;
+    flex-direction: column;
+  }
+
+  #title {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  #nav-button {
+    display: none;
+  }
+
+  .small_logo {
+    min-width: 0px;
+  }
+}
+
+
+
 /* Section 1 */
 
 #title-container {
-  height: 30vh;
   width: 100%;
   margin-bottom: 30vh;
   display: flex;
@@ -101,6 +153,16 @@ li {
   font-family: 'Tinos', serif;
   font-weight: 700;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  #title-container {
+    margin-bottom: 20vh;
+  }
+
+  #title {
+    font-size: 50px;
+  }
 }
 
 
@@ -143,11 +205,22 @@ li {
   height: calc(35vw / 7 * 5);
 }
 
+@media (max-width: 767px) {
+  #about-us {
+    display: flex;
+    margin-bottom: 10vh;
+    align-items: center;
+  }
+
+  #about-image {
+    display: none;
+  }
+}
+
 /*Section 3*/
 
 #why-linguistics {
   display: flex;
-  margin-bottom: 60vh;
   align-items: center;
 }
 
@@ -167,6 +240,43 @@ li {
   border: none;
 }
 
+@media (max-width: 767px) {
+  #why-image {
+    display: none;
+  }
+}
+
+/* Section 4 */
+
+#roadmap-link {
+  background-image: url(../assets/dotted-line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.roadmap {
+  height: 5vh;
+  width: calc(5vh / 130 * 450);
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  font-family: 'Tinos', serif;
+  font-size: 24px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  #roadmap-link {
+    background-image: url(../assets/small-dotted-line.png);
+  }
+}
+
+
 /* Sign-up */
 
 .form {
@@ -175,9 +285,11 @@ li {
 
 #sign-up-form {
   width: 75%;
+  height: 400px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 5%;
 }
 
@@ -203,7 +315,7 @@ li {
 .text-input {
   font-size: 18px;
   font-family: 'Tinos', serif;
-  width: 12vw;
+  width: 250px;
   height: 34px;
 }
 
@@ -237,7 +349,7 @@ textarea {
   resize: none;
   font-size: 18px;
   font-family: 'Tinos', serif;
-  width: 24vw;
+  width: calc(35vw - 300px);
   height: 136px;
 }
 
@@ -257,11 +369,97 @@ textarea {
   cursor: pointer;
 }
 
+@media (max-width: 1100px) {
+  #sign-up-form {
+    width: 80%;
+    height: 800px;
+    gap: 5%;
+  }
+
+  .input-subsection {
+    gap: 10px 2vw;
+  }
+
+  .input-field {
+    margin: 0;
+  }
+
+  .text-input {
+    width: 24vw;
+  }
+
+  textarea {
+    resize: none;
+    font-size: 18px;
+    font-family: 'Tinos', serif;
+    width: 400px;
+    height: 136px;
+  }
+}
+
+@media (max-width: 590px) {
+  #sign-up-form {
+    width: 100%;
+    height: 1200px;
+    gap: 5%;
+  }
+
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-subsection {
+    flex-direction: column;
+    gap: 10px 2vw;
+  }
+
+  .small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .input-field {
+    margin: 0;
+  }
+
+  .text-input {
+    width: 48vw;
+  }
+
+  span.subsection-header {
+    margin-right: 0;
+  }
+
+  textarea {
+    width: 300px;
+    height: 100px;
+  }
+
+  .radio-choice > .input-label {
+    padding: 0 5px;
+    padding-left: 0px;
+  }
+
+  .big-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Roadmap */
 
 #roadmap {
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 20vh;
 }
 
 #roadmap > .subtitle {
@@ -286,69 +484,20 @@ textarea {
   display: block;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  margin-bottom: 12px;
 }
 
-/* 
-#welcome-section {
-  height: 100%;
-  width: 100%;
-  background-color: #c0d6df;
-}
+/* Social Media */
 
-h1 {
-  font-size: 70px;
-  text-align: center;
-  padding: 44vh 0
-} */
-
-/*section 2*/
-/* 
-#projects {
-  width: 100%;
-  background-color: #ffbf81;
-}
-
-h3 {
-  text-align: center;
-  padding-top: 130px;
-  padding-bottom: 50px;
-  font-size: 40px;
-  font-family: Arial
-}
-
-#works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-  margin: 50px;
-}
-
-.caption {
-  font-size: 20px;
-  font-family: "work sans";
-  margin: 15px auto;
-  text-align: center;
-} */
-
-/*section 3*/
-/* 
-#about-me {
-  background-color: #A5FFC3;
-  width: 100%;
-}
-
-h2 {
-  text-align: center;
-  font-size: 45px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+#socials-title {
+  margin-bottom: 10vh;
 }
 
 #sl {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 70%;
   max-width: 700px;
   margin: 0 auto;
@@ -357,6 +506,34 @@ h2 {
   margin-bottom: 20vh;
 }
 
+#sl > a {
+  margin: 0 auto;
+}
+
 .logo {
   width: 150px;
-} */
+}
+
+#discord {
+  border-radius: 30px
+}
+
+/* Contest */
+
+#contest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#braille {
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 10vh;
+}
+
+#contest {
+  justify-content: space-around;
+  margin-bottom: 20vh;
+}
+
